@@ -1,20 +1,40 @@
-var life = 100;
+//strIng CONcatenation- AKA combining "strings"
+const name = 'potatoes';
+const age = "90-100 days";
 
-life = life - 10;
+console.log(`I want ${name} and I'll get them in ${age}`) 
 
-var name = "Nuggs";
+const combined = name + age; //results in string
 
-console.log(life);
-console.log(name);
+console.log(typeof combined);
+
+//I want potatoes.. POTATOES
 
 
+// JS FUNCTs & PARAMETERS
+const name = "potato"; //Global scope
+const food = "smooth starchy veggies";
 
-//const cannot modify values in var;
-//ie const life = 100; and const life = 1000; equal no workie
+function adder(num1, num2) { //Function scope  |  () allows you to add parameters
+    console.log(num1 + num2);
+    }
+        //variables from Global scope are available in Function scope, but not the other way around
+        //kinda like a square is a rectangle but a rectangle is not always a square.. right?
+    
+    //to run the function, use a Function Invocation
+adder (5,10);
 
-//HOWEVER if you use let instead of const it allows the 
-//change varible 
+function toUpper(text) { //do namingConventions cuz we're not bao^2
+    const upperCased = text.toUpperCase();
+    console.log(upperCased);
+    //text & numbers have different built-in functions
+}
+toUpper(name);
+toUpper(food);
 
-//fun facts: reserved terms such as false need no quotes
-//varibles with no equal sign are undefined n have no value
-//"VAR" has no value? 
+//other methods:
+const toUpper = function(){
+}
+const toUpper = () =>{
+}
+    //short n lazy way
