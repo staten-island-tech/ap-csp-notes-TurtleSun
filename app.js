@@ -1,20 +1,56 @@
-var life = 100;
+if (age > 18) {
+    console.log("go go!");
+} else if (age < 15){
+    console.log("very young so no");
+} else {
+    console.log("You are awkward so no")
+}
 
-life = life - 10;
+// BIG NOTES HERE LOOK AND REMEMBER
+// === to "compare same type"
+// || for "or" statements
+// && for "and" statements
 
-var name = "Nuggs";
+//switches are used when there are a lot of different cases
+/*
+const color = 'red';
 
-console.log(life);
-console.log(name);
+ switch(color){
+    case 'red':
+        console.log('color red');
+        break;
+    case 'blue':
+        console.log('color blue');
+        break;
+    default:
+        console.log('color not red or blue');
+        break;
+}
+ */
+let day;
 
+switch(new Date().getDay()){
+    case 0:
+        day = 'Sunday';
+        break;
+    case 1:
+        day = 'Monday';
+        break;
+    case 2:
+        day = 'Tuesday';
+        break;
+    case 3:
+        day = 'Wednesday';
+        break;
+    case 4:
+        day = 'Thursday';
+        break;
+    case 5:
+        day = 'Friday';
+        break;
+    case 6:
+        day = 'Saturday';
+        break;
+}
 
-
-//const cannot modify values in var;
-//ie const life = 100; and const life = 1000; equal no workie
-
-//HOWEVER if you use let instead of const it allows the 
-//change varible 
-
-//fun facts: reserved terms such as false need no quotes
-//varibles with no equal sign are undefined n have no value
-//"VAR" has no value? 
+console.log(`Today is ${day}`)
